@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0438B611235063120006912D /* AFHandy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438B607235063110006912D /* AFHandy.framework */; };
+		0438B618235063120006912D /* AFHandy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0438B60A235063110006912D /* AFHandy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0438B623235064460006912D /* AFHandyExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438B622235064460006912D /* AFHandyExtensions.swift */; };
+		0438B626235064880006912D /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438B625235064880006912D /* Airport.swift */; };
+		0438B629235064C90006912D /* AirportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438B628235064C90006912D /* AirportService.swift */; };
+		0438B62B235064EB0006912D /* AFHandyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438B62A235064EB0006912D /* AFHandyProtocols.swift */; };
+		0438B62D2350651A0006912D /* AirportFinderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438B62C2350651A0006912D /* AirportFinderHelper.swift */; };
+		0438B62F235065520006912D /* AFHandyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438B62E235065520006912D /* AFHandyConstants.swift */; };
+		0438B631235065780006912D /* AirportFinderHelperSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438B630235065780006912D /* AirportFinderHelperSpec.swift */; };
+		0438B63823507D5F0006912D /* MockAirportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0438B63723507D5F0006912D /* MockAirportService.swift */; };
+		0438B63923507EA10006912D /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 0438B632235065F70006912D /* airports.json */; };
+		0C8B02B553572EA38F46D942 /* Pods_AFHandy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7168CDFBD2B8DA3D49C03CCB /* Pods_AFHandy.framework */; };
+		3C424A36476B312118785B87 /* Pods_AFHandyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 855354C2A07F7E3662334667 /* Pods_AFHandyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0438B612235063120006912D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0438B5FE235063110006912D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0438B606235063110006912D;
+			remoteInfo = AFHandy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0438B607235063110006912D /* AFHandy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFHandy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0438B60A235063110006912D /* AFHandy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFHandy.h; sourceTree = "<group>"; };
+		0438B60B235063110006912D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0438B610235063120006912D /* AFHandyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFHandyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0438B617235063120006912D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0438B622235064460006912D /* AFHandyExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHandyExtensions.swift; sourceTree = "<group>"; };
+		0438B625235064880006912D /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		0438B628235064C90006912D /* AirportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportService.swift; sourceTree = "<group>"; };
+		0438B62A235064EB0006912D /* AFHandyProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHandyProtocols.swift; sourceTree = "<group>"; };
+		0438B62C2350651A0006912D /* AirportFinderHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportFinderHelper.swift; sourceTree = "<group>"; };
+		0438B62E235065520006912D /* AFHandyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFHandyConstants.swift; sourceTree = "<group>"; };
+		0438B630235065780006912D /* AirportFinderHelperSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportFinderHelperSpec.swift; sourceTree = "<group>"; };
+		0438B632235065F70006912D /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airports.json; sourceTree = "<group>"; };
+		0438B63723507D5F0006912D /* MockAirportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAirportService.swift; sourceTree = "<group>"; };
+		7168CDFBD2B8DA3D49C03CCB /* Pods_AFHandy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFHandy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		855354C2A07F7E3662334667 /* Pods_AFHandyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFHandyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16B9E8EBBA5D34532E99081 /* Pods-AFHandyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFHandyTests.release.xcconfig"; path = "Target Support Files/Pods-AFHandyTests/Pods-AFHandyTests.release.xcconfig"; sourceTree = "<group>"; };
+		BB3D0FC9D37E070551F31B5D /* Pods-AFHandyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFHandyTests.debug.xcconfig"; path = "Target Support Files/Pods-AFHandyTests/Pods-AFHandyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCBD30C0928E682EECA92188 /* Pods-AFHandy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFHandy.release.xcconfig"; path = "Target Support Files/Pods-AFHandy/Pods-AFHandy.release.xcconfig"; sourceTree = "<group>"; };
+		F5A1BA921DFFDFA2A96F08EF /* Pods-AFHandy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFHandy.debug.xcconfig"; path = "Target Support Files/Pods-AFHandy/Pods-AFHandy.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0438B604235063110006912D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8B02B553572EA38F46D942 /* Pods_AFHandy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0438B60D235063120006912D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0438B611235063120006912D /* AFHandy.framework in Frameworks */,
+				3C424A36476B312118785B87 /* Pods_AFHandyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0438B5FD235063110006912D = {
+			isa = PBXGroup;
+			children = (
+				0438B609235063110006912D /* AFHandy */,
+				0438B614235063120006912D /* AFHandyTests */,
+				0438B608235063110006912D /* Products */,
+				34CEF209C81C31ADE242AB19 /* Pods */,
+				C8F9F8E32C2DB71BA4DB1E32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0438B608235063110006912D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0438B607235063110006912D /* AFHandy.framework */,
+				0438B610235063120006912D /* AFHandyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0438B609235063110006912D /* AFHandy */ = {
+			isa = PBXGroup;
+			children = (
+				0438B63623507D460006912D /* MockService */,
+				0438B627235064B90006912D /* Service */,
+				0438B6242350647B0006912D /* Models */,
+				0438B6212350642D0006912D /* Categories */,
+				0438B60A235063110006912D /* AFHandy.h */,
+				0438B60B235063110006912D /* Info.plist */,
+				0438B62A235064EB0006912D /* AFHandyProtocols.swift */,
+				0438B62C2350651A0006912D /* AirportFinderHelper.swift */,
+				0438B62E235065520006912D /* AFHandyConstants.swift */,
+			);
+			path = AFHandy;
+			sourceTree = "<group>";
+		};
+		0438B614235063120006912D /* AFHandyTests */ = {
+			isa = PBXGroup;
+			children = (
+				0438B617235063120006912D /* Info.plist */,
+				0438B630235065780006912D /* AirportFinderHelperSpec.swift */,
+			);
+			path = AFHandyTests;
+			sourceTree = "<group>";
+		};
+		0438B6212350642D0006912D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0438B622235064460006912D /* AFHandyExtensions.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		0438B6242350647B0006912D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0438B625235064880006912D /* Airport.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0438B627235064B90006912D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0438B628235064C90006912D /* AirportService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0438B63623507D460006912D /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				0438B632235065F70006912D /* airports.json */,
+				0438B63723507D5F0006912D /* MockAirportService.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
+		34CEF209C81C31ADE242AB19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5A1BA921DFFDFA2A96F08EF /* Pods-AFHandy.debug.xcconfig */,
+				BCBD30C0928E682EECA92188 /* Pods-AFHandy.release.xcconfig */,
+				BB3D0FC9D37E070551F31B5D /* Pods-AFHandyTests.debug.xcconfig */,
+				B16B9E8EBBA5D34532E99081 /* Pods-AFHandyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C8F9F8E32C2DB71BA4DB1E32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7168CDFBD2B8DA3D49C03CCB /* Pods_AFHandy.framework */,
+				855354C2A07F7E3662334667 /* Pods_AFHandyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0438B602235063110006912D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0438B618235063120006912D /* AFHandy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0438B606235063110006912D /* AFHandy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0438B61B235063120006912D /* Build configuration list for PBXNativeTarget "AFHandy" */;
+			buildPhases = (
+				05D3EDC09350CB5D96BE89F8 /* [CP] Check Pods Manifest.lock */,
+				0438B602235063110006912D /* Headers */,
+				0438B603235063110006912D /* Sources */,
+				0438B604235063110006912D /* Frameworks */,
+				0438B605235063110006912D /* Resources */,
+				0438B635235067E20006912D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFHandy;
+			productName = AFHandy;
+			productReference = 0438B607235063110006912D /* AFHandy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0438B60F235063120006912D /* AFHandyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0438B61E235063120006912D /* Build configuration list for PBXNativeTarget "AFHandyTests" */;
+			buildPhases = (
+				4DE5FA8BEC3A24A6A85D57A8 /* [CP] Check Pods Manifest.lock */,
+				0438B60C235063120006912D /* Sources */,
+				0438B60D235063120006912D /* Frameworks */,
+				0438B60E235063120006912D /* Resources */,
+				A386BE29E274FBC56FD486B9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0438B613235063120006912D /* PBXTargetDependency */,
+			);
+			name = AFHandyTests;
+			productName = AFHandyTests;
+			productReference = 0438B610235063120006912D /* AFHandyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0438B5FE235063110006912D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					0438B606235063110006912D = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+					};
+					0438B60F235063120006912D = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 0438B601235063110006912D /* Build configuration list for PBXProject "AFHandy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0438B5FD235063110006912D;
+			productRefGroup = 0438B608235063110006912D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0438B606235063110006912D /* AFHandy */,
+				0438B60F235063120006912D /* AFHandyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0438B605235063110006912D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0438B63923507EA10006912D /* airports.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0438B60E235063120006912D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0438B635235067E20006912D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		05D3EDC09350CB5D96BE89F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AFHandy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DE5FA8BEC3A24A6A85D57A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AFHandyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A386BE29E274FBC56FD486B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFHandyTests/Pods-AFHandyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFHandyTests/Pods-AFHandyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AFHandyTests/Pods-AFHandyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0438B603235063110006912D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0438B62D2350651A0006912D /* AirportFinderHelper.swift in Sources */,
+				0438B623235064460006912D /* AFHandyExtensions.swift in Sources */,
+				0438B62B235064EB0006912D /* AFHandyProtocols.swift in Sources */,
+				0438B62F235065520006912D /* AFHandyConstants.swift in Sources */,
+				0438B63823507D5F0006912D /* MockAirportService.swift in Sources */,
+				0438B626235064880006912D /* Airport.swift in Sources */,
+				0438B629235064C90006912D /* AirportService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0438B60C235063120006912D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0438B631235065780006912D /* AirportFinderHelperSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0438B613235063120006912D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0438B606235063110006912D /* AFHandy */;
+			targetProxy = 0438B612235063120006912D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0438B619235063120006912D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0438B61A235063120006912D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0438B61C235063120006912D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5A1BA921DFFDFA2A96F08EF /* Pods-AFHandy.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AFHandy/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.assignment.AFHandy;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0438B61D235063120006912D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCBD30C0928E682EECA92188 /* Pods-AFHandy.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AFHandy/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.assignment.AFHandy;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0438B61F235063120006912D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB3D0FC9D37E070551F31B5D /* Pods-AFHandyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AFHandyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.assignment.AFHandyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0438B620235063120006912D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B16B9E8EBBA5D34532E99081 /* Pods-AFHandyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AFHandyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.assignment.AFHandyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0438B601235063110006912D /* Build configuration list for PBXProject "AFHandy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0438B619235063120006912D /* Debug */,
+				0438B61A235063120006912D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0438B61B235063120006912D /* Build configuration list for PBXNativeTarget "AFHandy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0438B61C235063120006912D /* Debug */,
+				0438B61D235063120006912D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0438B61E235063120006912D /* Build configuration list for PBXNativeTarget "AFHandyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0438B61F235063120006912D /* Debug */,
+				0438B620235063120006912D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0438B5FE235063110006912D /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_AFHandy {
+  umbrella header "Pods-AFHandy-umbrella.h"
+
+  export *
+  module * { export * }
+}
